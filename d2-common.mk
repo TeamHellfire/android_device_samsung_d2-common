@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2-common/gps/gps.conf:system/etc/gps.conf
 
+# Halo
+PRODUCT_PACKAGES += Halo
+
 # Torch
 PRODUCT_PACKAGES += Torch
 
