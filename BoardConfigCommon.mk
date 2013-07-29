@@ -78,3 +78,8 @@ BOARD_HAVE_AUDIENCE_A2220 := true
 # Use USB Dock Audio
 BOARD_HAVE_DOCK_USBAUDIO := true
 
+# Enable tunnel audio
+USE_TUNNEL_AUDIO := true
+
+
+
