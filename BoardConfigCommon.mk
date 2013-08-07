@@ -78,10 +78,8 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 # Enable tunnel audio
 USE_TUNNEL_AUDIO := true
 
-ifneq ($(VARIENT_MODEL),apexqtmo)
 # Use MM heap for Camera
 BOARD_CAMERA_USE_MM_HEAP := true
-endif
 
 # SELinux
 ifeq ($(HAVE_SELINUX),true)
@@ -117,3 +115,5 @@ thermald.te \
 ueventd.te \
 wpa_supplicant.te
 endif
+
+
