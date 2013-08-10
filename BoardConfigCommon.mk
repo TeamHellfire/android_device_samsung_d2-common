@@ -116,4 +116,3 @@ ueventd.te \
 wpa_supplicant.te
 endif
 
-
