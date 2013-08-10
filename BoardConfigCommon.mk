@@ -78,8 +78,8 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 # Enable tunnel audio
 USE_TUNNEL_AUDIO := true
 
-# Use MM heap for Camera
-BOARD_CAMERA_USE_MM_HEAP := true
+#camera abi compatiblily 
+TARGET_DISPLAY_INSECURE_MM_HEAP := true 
 
 # SELinux
 ifeq ($(HAVE_SELINUX),true)
