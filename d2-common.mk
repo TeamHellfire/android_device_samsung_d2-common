@@ -79,10 +79,6 @@ PRODUCT_PACKAGES += Halo
 # Torch
 PRODUCT_PACKAGES += Torch
 
-# Vold configuration
-PRODUCT_COPY_FILES += \
-    device/samsung/d2-common/vold.fstab:system/etc/vold.fstab
-
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
@@ -173,5 +169,10 @@ PRODUCT_COPY_FILES += \
 # common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+ifeq ($(filter apexqtmo expressatt,$(VARIENT_MODEL)),)
+    $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+else
+    $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+endif
+
 
