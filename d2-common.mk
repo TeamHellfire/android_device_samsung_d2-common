@@ -82,6 +82,9 @@ PRODUCT_PACKAGES += Halo
 # Torch
 PRODUCT_PACKAGES += Torch
 
+# Device Settings
+PRODUCT_PACKAGES += DeviceSettings
+
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
