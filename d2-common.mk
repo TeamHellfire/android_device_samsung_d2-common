@@ -82,10 +82,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2-common/gps/gps.conf:system/etc/gps.conf
 
-# Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb
-
 # Halo
 PRODUCT_PACKAGES += Halo
 
@@ -106,7 +102,7 @@ PRODUCT_PACKAGES += \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mass_storage,adb
+    persist.sys.usb.config=mtp
 
 # Lights
 PRODUCT_PACKAGES += lights.msm8960
